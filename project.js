@@ -1,4 +1,4 @@
-function on(){
+ function on(){
   let b = document.getElementsByClassName("dropdown")[i];
   let c = document.getElementsByClassName("dropdown")[i+1];
   let d = document.getElementsByClassName("dropdown")[i+2];
@@ -45,15 +45,8 @@ $(document).ready(function(){
     $(this).addClass('active');
   }
   $(".dropdown").not(this).removeClass('active');
+  });
 });
-});
-
-// @ This is awesome but how is it working is unknown 
-// $(document).ready(function(){
-//   $(".icon").click(function(){
-//     { $(".hamcont").toggle(".ishu");}
-//    });
-// })
 
 function drop(){
   let a = document.getElementsByClassName("hamcont")[0];
@@ -190,6 +183,4 @@ else
 { $("#limit").hide();
   $("#startcont").show();}
 })
-
-
 
