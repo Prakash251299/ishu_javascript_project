@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="project.js"></script>
+    
+</head>
+
+<body style="background-size: cover;">
+    <div id="startcont">
+
+   <img src="C:\Users\Ishu\Desktop\nsec-logo.png" class="logo">
+    <!-- This header is for large screen -->
+    <div class="header">
+        <a style="color:rgb(4, 4, 43)" onclick="nav(i=0)" class="tag" id="ho"><i class="fa fa-home"></i><b>Home</b></a>
+        <a onclick="nav(i=1)" class="tag" id="ab"><i class="fa fa-wpforms"></i><b>About us</b></a>
+        <a onclick="nav(i=2)" class="tag" id="co"><i class="fa fa-envelope"></i><b>Contact</b></a>
+        <span onclick="show()"><i class="fa fa-check-square"></i>Sign up</span>
+        <span onclick="search()"><i class="fa fa-search">search</i></span>
+    </div>
+
+    <div class="hamburger">
+        <a class="icon" onclick="drop()"><i class="fa fa-bars"></i></a>
+        <img src="C:\Users\Ishu\Desktop\nsec-logo.png"
+            style="position:relative;top:12px;left:20px;height: 40px;width: 40px;">
+    </div>
+
+
+    <!-- This header appears on clicking hamburger -->
+    <div class="hamcont">
+        <div class="hamhead">
+            <a><span style="color:rgb(4,4,43)" onclick="nav(i=0)" class="tag2"><i class="fa fa-home"></i><b>Home</b></span></a>
+            <a><span  onclick="nav(i=1)" class="tag2"><i class="fa fa-wpforms"></i><b>About us</b></span></a>
+            <a><span  onclick="nav(i=2)" class="tag2"><i class="fa fa-envelope"></i><b>Contact</b></span></a>
+            <a><span class="rghthov" onclick="show()"><i class="fa fa-check-square"></i>Sign up</span></a>
+            <a><span class="rghthov" onclick="search()"> <i class="fa fa-search">search</i></span></a>
+            <input type="search" id="inp2" class="hamsearch" placeholder="Enter your search...">
+        </div>
+    </div>
+    
+    <div class="searchbox">
+    <input type="text" id="inp" placeholder="Search.....">
+    <a class="erase" onclick="erase()">x</a>
+    </div> 
+
+
+    <div class="main">
+
+        <div class="background"></div>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+
+        <strong><h3 class="text">Hey! what you study?</h3></strong>
+
+        <div class="semcont">
+            <div>
+                <button id="1" class="sub" onclick="on(i=0)">Computer sci & engineering</button>
+            </div>
+            <div>
+                <button id="2" class="sub" onclick="on(i=4)">Information technology</button>
+            </div>
+            <div>
+                <button id="3" class="sub" onclick="on(i=8)">Aerospace engineeing</button>
+            </div>
+            <div>
+                <button id="4" class="sub" onclick="on(i=12)">Mechanical engineeing</button>
+            </div>
+        </div>
+
+        <div class="semcont" id="drop1">
+            <button id="11" class="dropdown" onclick="sem(i=0)">semester-1</button>
+            <button id="12" class="dropdown" onclick="sem(i=1)">semester-2</button>
+            <button id="13" class="dropdown" onclick="sem(i=2)">semester-3</button>
+            <button id="14" class="dropdown" onclick="sem(i=3)">semester-4</button>
+
+            <button id="21" class="dropdown" onclick="sem(i=4)">semester-1</button>
+            <button id="22" class="dropdown" onclick="sem(i=5)">semester-2</button>
+            <button id="23" class="dropdown" onclick="sem(i=6)">semester-3</button>
+            <button id="24" class="dropdown" onclick="sem(i=7)">semester-4</button>
+
+            <button id="31" class="dropdown" onclick="sem(i=8)">semester-1</button>
+            <button id="32" class="dropdown" onclick="sem(i=9)">semester-2</button>
+            <button id="33" class="dropdown" onclick="sem(i=10)">semester-3</button>
+            <button id="34" class="dropdown" onclick="sem(i=11)">semester-4</button>
+
+            <button id="41" class="dropdown" onclick="sem(i=12)">semester-1</button>
+            <button id="42" class="dropdown" onclick="sem(i=13)">semester-2</button>
+            <button id="43" class="dropdown" onclick="sem(i=14)">semester-3</button>
+            <button id="44" class="dropdown" onclick="sem(i=15)">semester-4</button>
+        </div>
+        <br><br>
+
+        <div class="container">
+            <div id="container11" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>Indefinite integral</td>
+                            <td>Matrix</td>
+                            <td>Laplace's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Physics</th>
+                            <td>Electrostatics</td>
+                            <td>Classical mechanics</td>
+                            <td>Quantum mechanics</td>
+                        </tr>
+                        <tr>
+                            <th>Electrical</th>
+                            <td>galvanometer</td>
+                            <td>Ammeter</td>
+                            <td>Transformer</td>
+                        </tr>
+                        <tr>
+                            <th>Lab</th>
+                            <td>Workshop</td>
+                            <td>Electrical</td>
+                            <td>Physics</td>
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics</th>
+                            <th>Physics</th>
+                            <th>Electrical</th>
+                            <th>Lab</th>
+                        </tr>
+
+                        <tr>
+                            <td>Indefinite integral</td>
+                            <td>Electrostatics</td>
+                            <td>galvanometer</td>
+                            <td>Workshop</td>
+                        </tr>
+
+                        <tr>
+                            <td>Matrix</td>
+                            <td>Classical mechanics</td>
+                            <td>Ammeter</td>
+                            <td>Electrical</td>
+                        </tr>
+
+                        <tr>
+                            <td>Laplace's Law</td>
+                            <td>Quantum mechanics</td>
+                            <td>Transformer</td>
+                            <td>Physics</td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+            </div>
+            <div id="container12" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming</th>
+                            <td>Variables</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics</th>
+                            <th>Programming</th>
+                            <th>Chemistry</th>
+                            <th>English</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container13" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics-3</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming-3</th>
+                            <td>Data Structure</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry-3</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English-3</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics-3</th>
+                            <th>Programming-3</th>
+                            <th>Chemistry-3</th>
+                            <th>English-3</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container14" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics-4</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming-4</th>
+                            <td>Variables</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry-4</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English-4</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics-4</th>
+                            <th>Programming-4</th>
+                            <th>Chemistry-4</th>
+                            <th>English-4</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container11" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>Indefinite integral</td>
+                            <td>Matrix</td>
+                            <td>Laplace's Law</td>
+
+                        </tr>
+                        <tr>
+                            <th>Physics</th>
+                            <td>Electrostatics</td>
+                            <td>Classical mechanics</td>
+                            <td>Quantum mechanics</td>
+
+                        </tr>
+                        <tr>
+                            <th>Electrical</th>
+                            <td>galvanometer</td>
+                            <td>Ammeter</td>
+                            <td>Transformer</td>
+
+                        </tr>
+                        <tr>
+                            <th>Lab</th>
+                            <td>Workshop</td>
+                            <td>Electrical</td>
+                            <td>Physics</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics</th>
+                            <th>Physics</th>
+                            <th>Electrical</th>
+                            <th>Lab</th>
+                        </tr>
+
+                        <tr>
+                            <td>Indefinite integral</td>
+                            <td>Electrostatics</td>
+                            <td>galvanometer</td>
+                            <td>Workshop</td>
+                        </tr>
+
+                        <tr>
+                            <td>Matrix</td>
+                            <td>Classical mechanics</td>
+                            <td>Ammeter</td>
+                            <td>Electrical</td>
+                        </tr>
+
+                        <tr>
+                            <td>Laplace's Law</td>
+                            <td>Quantum mechanics</td>
+                            <td>Transformer</td>
+                            <td>Physics</td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+            </div>
+            <div id="container12" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming</th>
+                            <td>Variables</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics</th>
+                            <th>Programming</th>
+                            <th>Chemistry</th>
+                            <th>English</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container13" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics-3</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming-3</th>
+                            <td>Data Structure</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry-3</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English-3</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics-3</th>
+                            <th>Programming-3</th>
+                            <th>Chemistry-3</th>
+                            <th>English-3</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container14" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics-4</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming-4</th>
+                            <td>Variables</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry-4</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English-4</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics-4</th>
+                            <th>Programming-4</th>
+                            <th>Chemistry-4</th>
+                            <th>English-4</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container11" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>Indefinite integral</td>
+                            <td>Matrix</td>
+                            <td>Laplace's Law</td>
+
+                        </tr>
+                        <tr>
+                            <th>Physics</th>
+                            <td>Electrostatics</td>
+                            <td>Classical mechanics</td>
+                            <td>Quantum mechanics</td>
+
+                        </tr>
+                        <tr>
+                            <th>Electrical</th>
+                            <td>galvanometer</td>
+                            <td>Ammeter</td>
+                            <td>Transformer</td>
+
+                        </tr>
+                        <tr>
+                            <th>Lab</th>
+                            <td>Workshop</td>
+                            <td>Electrical</td>
+                            <td>Physics</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics</th>
+                            <th>Physics</th>
+                            <th>Electrical</th>
+                            <th>Lab</th>
+                        </tr>
+
+                        <tr>
+                            <td>Indefinite integral</td>
+                            <td>Electrostatics</td>
+                            <td>galvanometer</td>
+                            <td>Workshop</td>
+                        </tr>
+
+                        <tr>
+                            <td>Matrix</td>
+                            <td>Classical mechanics</td>
+                            <td>Ammeter</td>
+                            <td>Electrical</td>
+                        </tr>
+
+                        <tr>
+                            <td>Laplace's Law</td>
+                            <td>Quantum mechanics</td>
+                            <td>Transformer</td>
+                            <td>Physics</td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+            </div>
+            <div id="container12" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming</th>
+                            <td>Variables</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics</th>
+                            <th>Programming</th>
+                            <th>Chemistry</th>
+                            <th>English</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container13" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics-3</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming-3</th>
+                            <td>Data Structure</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry-3</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English-3</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics-3</th>
+                            <th>Programming-3</th>
+                            <th>Chemistry-3</th>
+                            <th>English-3</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="container14" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics-4</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming-4</th>
+                            <td>Variables</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry-4</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English-4</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics-4</th>
+                            <th>Programming-4</th>
+                            <th>Chemistry-4</th>
+                            <th>English-4</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container11" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>Indefinite integral</td>
+                            <td>Matrix</td>
+                            <td>Laplace's Law</td>
+
+                        </tr>
+                        <tr>
+                            <th>Physics</th>
+                            <td>Electrostatics</td>
+                            <td>Classical mechanics</td>
+                            <td>Quantum mechanics</td>
+
+                        </tr>
+                        <tr>
+                            <th>Electrical</th>
+                            <td>galvanometer</td>
+                            <td>Ammeter</td>
+                            <td>Transformer</td>
+
+                        </tr>
+                        <tr>
+                            <th>Lab</th>
+                            <td>Workshop</td>
+                            <td>Electrical</td>
+                            <td>Physics</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics</th>
+                            <th>Physics</th>
+                            <th>Electrical</th>
+                            <th>Lab</th>
+                        </tr>
+
+                        <tr>
+                            <td>Indefinite integral</td>
+                            <td>Electrostatics</td>
+                            <td>galvanometer</td>
+                            <td>Workshop</td>
+                        </tr>
+
+                        <tr>
+                            <td>Matrix</td>
+                            <td>Classical mechanics</td>
+                            <td>Ammeter</td>
+                            <td>Electrical</td>
+                        </tr>
+
+                        <tr>
+                            <td>Laplace's Law</td>
+                            <td>Quantum mechanics</td>
+                            <td>Transformer</td>
+                            <td>Physics</td>
+                        </tr>
+
+
+
+                    </table>
+                </div>
+            </div>
+            <div id="container12" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming</th>
+                            <td>Variables</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics</th>
+                            <th>Programming</th>
+                            <th>Chemistry</th>
+                            <th>English</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container13" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics-3</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming-3</th>
+                            <td>Data Structure</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry-3</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English-3</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics-3</th>
+                            <th>Programming-3</th>
+                            <th>Chemistry-3</th>
+                            <th>English-3</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="container14" class="conthide">
+                <div class="syll">
+                    <table class="table1">
+                        <tr>
+                            <th>Mathematics-4</th>
+                            <td>Probability</td>
+                            <td>Bernouli's Trial</td>
+                            <td>Binomial Law</td>
+                            <td>Poison's Law</td>
+                        </tr>
+                        <tr>
+                            <th>Programming-4</th>
+                            <td>Variables</td>
+                            <td>Datatype</td>
+                            <td>Arrays</td>
+                            <td>Pointers</td>
+                        </tr>
+                        <tr>
+                            <th>Chemistry-4</th>
+                            <td>Spectroscopy</td>
+                            <td>Water Chemistry</td>
+                            <td>Periodicity</td>
+                            <td>Organic Reactions</td>
+                        </tr>
+                        <tr>
+                            <th>English-4</th>
+                            <td>Communiation Theory</td>
+                            <td>Letter Writing</td>
+                            <td>Business Letter</td>
+                            <td>CV and Resume</td>
+
+                        </tr>
+                    </table>
+                    <table class="table2">
+                        <tr>
+                            <th>Mathematics-4</th>
+                            <th>Programming-4</th>
+                            <th>Chemistry-4</th>
+                            <th>English-4</th>
+                        </tr>
+
+                        <tr>
+                            <td>Probability</td>
+                            <td>Variables</td>
+                            <td>Spectroscopy</td>
+                            <td>Communiation Theory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bernouli's Trial</td>
+                            <td>Datatype</td>
+                            <td>Water Chemistry</td>
+                            <td>Letter Writing</td>
+                        </tr>
+
+                        <tr>
+                            <td>Binomial Law</td>
+                            <td>Arrays</td>
+                            <td>Periodicity</td>
+                            <td>Business Letter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Poison's Law</td>
+                            <td>Pointers</td>
+                            <td>Acid Base</td>
+                            <td>CV and Resume</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="main" style="display: none;">
+        <h1>NETAJI SUBHASH ENGINEERING COLLEGE</h1>
+        <img src="C:\Users\Ishu\Desktop\nsec 1image.jpg" class="aboutimg">
+        <div class="aboutcont">The Netaji Subhash Engineering College (NSEC) has been set up, keeping in mind the ideals of Netaji Subhash
+            Chandra Bose, whose contribution to the Indian Freedom Movement remains invaluable forever. Netaji had
+            dreamt of vibrant, strong and powerful India, an India which would be independent and self reliant, not only
+            politically, but also in the spheres of Education & Technology. He strongly believed that true independence
+            can only stem from strong base in education and technology.
+
+            His vision is our beacon and to give a concrete shape to his vision, we have set up Netaji Subhash
+            Engineering College. We believe in his ideals that intelligent minds are the greatest resources in any walk
+            of life. Our vision is to infuse young intelligent minds with cutting edge technical education and help them
+            to become matured professionals poised and ready to accept technical and managerial challenges in the global
+            scenario.
+
+            At NSEC, we give maximum importance to in-depth studies in IT and its related fields. Without diluting this
+            basic goal and with an aim to produce professionals with sound knowledge in IT., we also intend to further
+            sharpen our students by imparting specialized training in different advanced topics in management and
+            technology so that our outgoing students can become not mere professionals knowledgeable in IT, but
+            technically and managerially confident professionals with good communication skills - a more matured and
+            better marketable product.
+
+            Apart from 4 years B.Tech the Institute also offers 2 years Masters of Technology Programmes and 3 years
+            Masters Programme leading to MCA, approved by Department of Higher Education, Govt. of West Bengal and All
+            India Council for Technical Education (AICTE), Ministry of Human Resource Development, Govt. of India and
+            affiliated to Maulana Abul Kalam Azad University of Technology, West Bengal (Formerly known as West Bengal
+            University of Technology - WBUT).
+        </div>
+    </div>
+
+    <div class="main" style="display: none;">
+        <img src="C:\Users\Ishu\Desktop\2image.jpg" class="contactimg">
+        <div class="contactcont">
+            <table>
+                <tr>
+                    <th >Academic contacts</th>
+                    <td>Prof. (Dr.) Tirthankar Datta<br>
+                     Principal<br>
+                     Email: principal@nsec.ac.in,<br>
+                     principalnsec152@gmail.com</td>
+                 </tr> 
+                 
+                 <tr>    
+                     <th>Administrative contacts</th>
+                     <td>Dr. H. K. Mandal
+                     Director
+                     Email: nsecdirectorhm@gmail.com ,<br>
+                     info@nsec.ac.in</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal">
+        <form style="border:3px solid brown; background-color: whitesmoke;" id="regForm" action="project.php"
+       method="post">
+       <a class="cross" onclick="hide()">x</a>
+           <h1 style="color: red;">Register:</h1>
+           <div class="tab" style="display: block;">Name:
+
+               <p><input type="text" id="reqnm" placeholder="First name..." name="fname"></p>
+               <p><input placeholder="Last name..." name="lname" ></p>
+           </div>
+           <div class="tab">Contact Info:
+               <p><input placeholder="E-mail..." name="email"></p>
+               <p><input placeholder="Phone..." name="phone"></p>
+           </div>
+
+           <div class="tab">Personal details:
+               <p><input placeholder="D.O.B.(yyyy-mm-dd)"  name="dob"></p>
+               <p><input placeholder="Address" name="add" type="password"></p>
+           </div>
+           <div style="overflow:auto;">
+               <div style="float:left;">
+                   <button type="button" id="prevBtn" onclick="nextPrev(j=-1)">Previous</button>
+               </div>
+               <div style="float:right;">
+                   <button type="button" id="nextBtn" onclick="nextPrev(j=1)">Next</button>
+                </div>
+                <div style="float:right;">
+                    <button type="submit" id="submitBtn">Submit</button>
+                </div>
+               
+            </div>
+            <!-- Circles which indicates the steps of the form: -->
+            <div id="stepcont" style="text-align:center;margin-top:40px;">
+                <span id="step1" class="step" style="opacity: 1;">o</span>
+                <span class="step">o</span>
+                <span class="step">o</span>
+                <p style="text-align: center;color: red;">Please, fill all the informations</p>
+            </div>
+       </form>
+   </div>
+</div>
+
+<!-- Message for very small screen -->
+<div id="limit" style="display:none;">Your screen is too small for this website so use desktop view</div>
+
+</body>
+</html>
