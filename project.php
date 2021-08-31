@@ -7,9 +7,9 @@ $dob=$_POST["dob"];
 $add=$_POST["address"];
 
 $servername="localhost";
-$username="root";
+$username="id16715446_prakash";
 $password="";
-$database="project";
+$database="id16715446_dbprakash2512";
 
 $subject = "test";
 $message = "how are you";
@@ -22,7 +22,7 @@ if(!$conn)
     echo "no wrok";echo "br";
 }
 else
-{echo "work done";echo "br"}
+{echo "work done";echo "br";}
 $sql="INSERT INTO `project`(`name`,`lanm`,`email`,`phone`,`usnm`,`password`) VALUES('$name','$lannm','$email','$phone','$dob','$add')";
 $result=mysqli_query($conn,$sql);
 if($result)
