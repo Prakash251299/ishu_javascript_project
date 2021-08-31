@@ -4,14 +4,8 @@
 .hover{
     background-color: rgb(4,4,43);
 }
-.hover2{
-    color: red;
-}
-.hover3{
-    color: rgb(4,4,43);
-}
 .background {
-    background: url('C:\\Users\\Ishu\\Desktop\\nsec photo1.jpg');
+    background: url('https://ishu2512.000webhostapp.com/webdev/IMAGES/nsec%20photo1.jpg');
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -136,13 +130,6 @@ button:hover {
     display: none;
 }
 
-/*How it is working is unknown (javascript is marked by @) 
-            .ishu{
-                display: block;
-               } */
-
-
-              
 h1 {
     color: maroon;
     text-align: center;
